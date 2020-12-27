@@ -99,7 +99,7 @@ def unify(exp1, exp2):
 
     return initialSubstitution + remainingSubstitution
 
-if __name__ == "__main__":
+def main():
     print("Enter the first expression")
     e1 = input()
     print("Enter the second expression")
@@ -107,3 +107,4 @@ if __name__ == "__main__":
     substitutions = unify(e1, e2)
     print("The substitutions are:")
     print([' / '.join(substitution) for substitution in substitutions])
+main()             
